@@ -1,0 +1,11 @@
+<form (ngSubmit)="onFilterSubmit()">
+    <div class="form-control">
+        <input type="text" name="count" [(ngModel)]="count" placeholder="Number of Articles"/>
+    </div>
+    <div class="form-control">
+        <input type="submit" value="Filter"/>
+    </div>   
+</form>
+<div *ngFor="let article of articles">
+    <div class="article">{{article.title}}</div>
+</div>
